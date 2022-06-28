@@ -406,11 +406,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🎭 ASSIST', url='https://t.me/ml_assistant_v0_bot'),
-            InlineKeyboardButton('🍿 Group', url='https://t.me/Mallu_movies_gp')
+            InlineKeyboardButton('🎭 𝐀𝐒𝐒𝐈𝐒𝐓', url='https://t.me/ml_assistant_v0_bot'),
+            InlineKeyboardButton('🍿 𝐆𝐑𝐎𝐔𝐏', url='https://t.me/Mallu_movies_gp')
         ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('💫 𝐇𝐄𝐋𝐏', callback_data='help'),
+            InlineKeyboardButton('🍁 𝐀𝐁𝐎𝐔𝐓', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(

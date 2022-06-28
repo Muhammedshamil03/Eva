@@ -431,24 +431,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔮 𝐒𝐓𝐀𝐓𝐔𝐒', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+        await message.replay_sticker(
+            sticker_id="CAACAgIAAxkBAAECr6BiuwoF4Y1G5Vfwb48tt0rkFmFFugACdBkAAv3EyUkrrD3DFv2fpR4E",
             reply_markup=reply_markup,
-            parse_mode='html'
+            
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('📎 More Links', url='https://t.me/ML_LINKS_01'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('📎 𝐌𝐎𝐑𝐄 𝐋𝐈𝐍𝐊𝐒', url='https://t.me/ML_LINKS_01'),
+            InlineKeyboardButton('♥️ 𝐒𝐎𝐔𝐑𝐂𝐄', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 𝐇𝐎𝐌𝐄', callback_data='start'),
             InlineKeyboardButton('🔐 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+        await message.replay_sticker(
+            sticker_id="CAACAgIAAxkBAAECr55iuwnoD5Gg_wXmRPqk8iKPVVRFewAC5hcAAvP2gUnUb8mtTJzF0R4E",
             reply_markup=reply_markup,
-            parse_mode='html'
+            
         )
     elif query.data == "source":
         buttons = [[

@@ -432,6 +432,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.replay_sticker(
+            text=script.HELP_TXT.format(query.from_user.mention),
             sticker="CAACAgIAAxkBAAECr6BiuwoF4Y1G5Vfwb48tt0rkFmFFugACdBkAAv3EyUkrrD3DFv2fpR4E",
             reply_markup=reply_markup,
             
@@ -446,6 +447,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.replay_sticker(
+            text=script.ABOUT_TXT.format(temp.B_NAME),
             sticker="CAACAgIAAxkBAAECr55iuwnoD5Gg_wXmRPqk8iKPVVRFewAC5hcAAvP2gUnUb8mtTJzF0R4E",
             reply_markup=reply_markup,
             

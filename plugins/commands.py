@@ -55,7 +55,7 @@ async def start(client, message):
             sticker="CAACAgIAAxkBAAECruFiurKqVfsKP1cPVPdNZJmwJPMOyAACVBYAAtB7QUn8uVjZ80ZWKB4E",
             
             reply_markup=reply_markup,
-            parse_mode='html'
+            
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
@@ -101,7 +101,7 @@ async def start(client, message):
             sticker="CAACAgIAAxkBAAECruFiurKqVfsKP1cPVPdNZJmwJPMOyAACVBYAAtB7QUn8uVjZ80ZWKB4E",
             
             reply_markup=reply_markup,
-            parse_mode='html'
+            
         )
         return
     data = message.command[1]

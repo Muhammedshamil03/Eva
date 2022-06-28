@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔮 𝐒𝐓𝐀𝐓𝐔𝐒', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.replay_sticker(
+        await query.message.replay_sticker(
             sticker="CAACAgIAAxkBAAECr6BiuwoF4Y1G5Vfwb48tt0rkFmFFugACdBkAAv3EyUkrrD3DFv2fpR4E",
             reply_markup=reply_markup,
             
@@ -445,7 +445,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔐 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.replay_sticker(
+        await query.message.replay_sticker(
             sticker="CAACAgIAAxkBAAECr55iuwnoD5Gg_wXmRPqk8iKPVVRFewAC5hcAAvP2gUnUb8mtTJzF0R4E",
             reply_markup=reply_markup,
             
